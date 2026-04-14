@@ -52,7 +52,6 @@ function Fetch() {
       })
       .then(data => {
         setWeatherData(data);
-        console.log(data);
 
 
       })
