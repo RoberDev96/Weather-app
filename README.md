@@ -1,75 +1,26 @@
-# React + TypeScript + Vite
+# Weather App 🌤️
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Proyecto basado en el reto de [roadmap.sh: Weather Web App](https://roadmap.sh/projects/weather-app)**
 
-Currently, two official plugins are available:
+Una aplicación del clima moderna e interactiva construida con React y TypeScript. Permite a los usuarios buscar el clima actual de cualquier ciudad del mundo, mostrando datos como temperatura, humedad, velocidad del viento y una representación visual del estado del cielo.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Puedes ver la aplicación en vivo aquí: [Weather App](https://roberdev96.github.io/Weather-app/)
 
-## React Compiler
+## ✨ Características Principales
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+-   **Búsqueda por ciudad:** Encuentra el clima de cualquier ubicación usando el campo de búsqueda (Requisito principal del proyecto).
+-   **Datos actuales:** Muestra la temperatura actual, la sensación térmica, la humedad y la velocidad del viento.
+-   **Fecha formateada:** Presenta la fecha actual en un formato legible en español.
+-   **Íconos dinámicos:** La imagen (sol, luna, nubes, lluvia) cambia automáticamente según las condiciones climáticas reportadas por la API.
+-   **Diseño responsivo:** Interfaz centrada y adaptable, inspirada en las modernas tarjetas de clima.
+-   **Carga inicial:** Al cargar la página, muestra por defecto el clima de Matanzas, Cuba.
 
-Note: This will impact Vite dev & build performances.
+## 🛠️ Tecnologías Utilizadas
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+-   **React:** Biblioteca principal para la construcción de la interfaz de usuario.
+-   **TypeScript:** Añade tipado estático para un código más robusto y fácil de mantener.
+-   **Vite:** Herramienta de construcción ultrarrápida para el entorno de desarrollo.
+-   **Tailwind CSS:** Framework de CSS utilitario para estilizar la aplicación de manera rápida y eficiente.
+-   **Visual Crossing Weather API:** Fuente de los datos meteorológicos (temperatura, viento, condiciones, etc.).
+-   **Iconify:** Para los íconos de la interfaz (búsqueda).
+-   **GitHub Pages:** Plataforma utilizada para desplegar y alojar la aplicación de forma gratuita.
