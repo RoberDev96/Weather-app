@@ -24,3 +24,7 @@ Puedes ver la aplicación en vivo aquí: [Weather App](https://roberdev96.github
 -   **Visual Crossing Weather API:** Fuente de los datos meteorológicos (temperatura, viento, condiciones, etc.).
 -   **Iconify:** Para los íconos de la interfaz (búsqueda).
 -   **GitHub Pages:** Plataforma utilizada para desplegar y alojar la aplicación de forma gratuita.
+
+## 📄 Licencia
+
+Este proyecto está bajo la licencia MIT. Consulta el archivo [LICENSE](LICENSE) para más detalles.
